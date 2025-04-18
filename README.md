@@ -38,34 +38,14 @@ Runs tests in console, in browser or with coverage.
 
 Runs linting and formatting for all files in `src` folder.
 
-### `client:deploy`, `client:deploy:nc`
+### `deploy`
 
-Deploy the project build from `dist` folder to configured in `serverless.yml` AWS S3 bucket with or without confirmation.
+Deploys the project build from `dist` folder to configured azure storage
 
-### `client:build:deploy`, `client:build:deploy:nc`
+### `deploy:azure`
 
-Combination of `build` and `client:deploy` commands with or without confirmation.
+Deploys the project build from `dist` folder to configured azure storage with explicitly cleaning the storage before
 
-### `cloudfront:setup`
+### `clean:azure`
 
-Deploy configured in `serverless.yml` stack via CloudFormation.
-
-### `cloudfront:domainInfo`
-
-Display cloudfront domain information in console.
-
-### `cloudfront:invalidateCache`
-
-Invalidate cloudfront cache.
-
-### `cloudfront:build:deploy`, `cloudfront:build:deploy:nc`
-
-Combination of `client:build:deploy` and `cloudfront:invalidateCache` commands with or without confirmation.
-
-### `cloudfront:update:build:deploy`, `cloudfront:update:build:deploy:nc`
-
-Combination of `cloudfront:setup` and `cloudfront:build:deploy` commands with or without confirmation.
-
-### `serverless:remove`
-
-Remove an entire stack configured in `serverless.yml` via CloudFormation.
+Cleans the previous data persistent in the storage
