@@ -24,3 +24,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.terraform/
+*.zip
+*.log
+terraform-task3/terraform.tfstate
+terraform-task3/.terraform.lock.hcl
+terraform-task3/.terraform/
